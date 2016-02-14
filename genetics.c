@@ -13,6 +13,7 @@ Summary statistics are reported out on the console, and detailed results are out
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 //Definition of a person
@@ -233,8 +234,13 @@ int main()
 
     CreatePersonCollection(&myPeople, totalPop);
 
+    //Print start time
+    time_t starttime;
+    time(&starttime);
+    printf("%s", ctime(&starttime));
     //Start simulation
     simulate(numberOfGenerations, populationCount, 1, &myPeople,numberOfPossibleGeneValues,geneValueOfInterest);
+
 
     //Print out our parameters
     printf("We start with a population of %d people.  For our gene of interest, we have have %d possible values.  We are interested in value %d.  Values higher are dominant, and values lower are recessive.\n\n", populationCount, numberOfPossibleGeneValues, geneValueOfInterest);
@@ -279,6 +285,10 @@ int main()
     //Dispose of the collection of persons
     ReleasePeople(&myPeople);
 
+    //Print end time
+    time_t endtime;
+    time(&endtime);
+    printf("%s", ctime(&endtime));
 
     return 0;
 }
