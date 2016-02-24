@@ -1,4 +1,4 @@
-/*
+/* hello there
 Simulates a specific trait inheriting down through generations.
 
 This is just another program to keep my 3GL skills exercised. This application allows a user to create an initial population of N size. Each person is randomly assigned to be male or female. The user also chooses an integer to be a genetic trait value of interest within a specificed range of values. The initial population is randomly seeded with these traits (two values for each person). For example, a user chooses five as the genetic trait value. The users also chooses the value range to be between zero and one hundred. Five will be tracked as the value of interest and be dominant over values zero through four.
