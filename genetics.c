@@ -8,6 +8,7 @@ After the initial seeding of values for the first generation, new generations ar
 Summary statistics are reported out on the console, and detailed results are output to results.txt.
 
 -Tim Andrews / Feb 13 2016.
+tfnpc
 */
 
 
